@@ -28,8 +28,9 @@
     </style>
     <script>
         const prefix = "https://web-tech.tw";
-        const suffix = location.pathname.replace(/^\//, "");
-        location.replace(`${prefix}/${suffix}`);
+        const suffixPath = location.pathname.replace(/^\//, "");
+        const suffixHash = location.hash.replace(/^\#/, "");
+        location.replace(`${prefix}/${suffixPath}#${suffixHash}`);
     </script>
 </head>
 <body>
