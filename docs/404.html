@@ -28,8 +28,8 @@
     </style>
     <script>
         const prefix = "https://web-tech.tw";
-        const suffix = location.pathname;
-        location.replace([prefix, suffix].join("/"));
+        const suffix = location.pathname.replace(/^\//, "");
+        location.replace(prefix + suffix);
     </script>
 </head>
 <body>
