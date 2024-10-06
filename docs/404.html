@@ -26,11 +26,16 @@
             text-decoration: none;
         }
     </style>
+    <script>
+        const prefix = "https://web-tech.tw";
+        const suffix = location.pathname;
+        location.replace([prefix, suffix].join("/"));
+    </script>
 </head>
 <body>
 <div id="app">
     <div class="modal">
-        <h1>Page is not found.</h1>
+        <h1>Auto Redirecting...</h1>
         <div class="action">
             <a href="https://web-tech.tw">Go Home</a>
         </div>
